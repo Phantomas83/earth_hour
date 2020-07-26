@@ -45,11 +45,11 @@
     position: absolute;
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through 18 {
     .bulb#{$i} {
         left: random(90)+vw;
         top: random(90) + vh;
-        animation: show 2s linear $i*1s both;
+        animation: show 2s linear $i*0.5s both;
     }
 }
 
@@ -68,6 +68,6 @@
     font-size: 32px;
     font-weight: bold;
     position: absolute;
-    left: 50%;
+    left: 45%;
     bottom: 32px;
 }

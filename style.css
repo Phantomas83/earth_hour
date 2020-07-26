@@ -72,45 +72,129 @@
 }
 
 .bulb1 {
-  left: 24vw;
-  top: 45vh;
+  left: 46vw;
+  top: 74vh;
+  -webkit-animation: show 2s linear 0.5s both;
+          animation: show 2s linear 0.5s both;
+}
+
+.bulb2 {
+  left: 19vw;
+  top: 4vh;
   -webkit-animation: show 2s linear 1s both;
           animation: show 2s linear 1s both;
 }
 
-.bulb2 {
-  left: 3vw;
-  top: 26vh;
+.bulb3 {
+  left: 2vw;
+  top: 41vh;
+  -webkit-animation: show 2s linear 1.5s both;
+          animation: show 2s linear 1.5s both;
+}
+
+.bulb4 {
+  left: 85vw;
+  top: 10vh;
   -webkit-animation: show 2s linear 2s both;
           animation: show 2s linear 2s both;
 }
 
-.bulb3 {
-  left: 73vw;
-  top: 75vh;
+.bulb5 {
+  left: 8vw;
+  top: 9vh;
+  -webkit-animation: show 2s linear 2.5s both;
+          animation: show 2s linear 2.5s both;
+}
+
+.bulb6 {
+  left: 60vw;
+  top: 1vh;
   -webkit-animation: show 2s linear 3s both;
           animation: show 2s linear 3s both;
 }
 
-.bulb4 {
-  left: 16vw;
-  top: 34vh;
+.bulb7 {
+  left: 29vw;
+  top: 27vh;
+  -webkit-animation: show 2s linear 3.5s both;
+          animation: show 2s linear 3.5s both;
+}
+
+.bulb8 {
+  left: 11vw;
+  top: 10vh;
   -webkit-animation: show 2s linear 4s both;
           animation: show 2s linear 4s both;
 }
 
-.bulb5 {
-  left: 59vw;
-  top: 11vh;
+.bulb9 {
+  left: 17vw;
+  top: 32vh;
+  -webkit-animation: show 2s linear 4.5s both;
+          animation: show 2s linear 4.5s both;
+}
+
+.bulb10 {
+  left: 85vw;
+  top: 35vh;
   -webkit-animation: show 2s linear 5s both;
           animation: show 2s linear 5s both;
 }
 
-.bulb6 {
-  left: 32vw;
-  top: 69vh;
+.bulb11 {
+  left: 76vw;
+  top: 89vh;
+  -webkit-animation: show 2s linear 5.5s both;
+          animation: show 2s linear 5.5s both;
+}
+
+.bulb12 {
+  left: 38vw;
+  top: 5vh;
   -webkit-animation: show 2s linear 6s both;
           animation: show 2s linear 6s both;
+}
+
+.bulb13 {
+  left: 25vw;
+  top: 85vh;
+  -webkit-animation: show 2s linear 6.5s both;
+          animation: show 2s linear 6.5s both;
+}
+
+.bulb14 {
+  left: 38vw;
+  top: 56vh;
+  -webkit-animation: show 2s linear 7s both;
+          animation: show 2s linear 7s both;
+}
+
+.bulb15 {
+  left: 18vw;
+  top: 66vh;
+  -webkit-animation: show 2s linear 7.5s both;
+          animation: show 2s linear 7.5s both;
+}
+
+.bulb16 {
+  left: 81vw;
+  top: 86vh;
+  -webkit-animation: show 2s linear 8s both;
+          animation: show 2s linear 8s both;
+}
+
+.bulb17 {
+  left: 26vw;
+  top: 64vh;
+  -webkit-animation: show 2s linear 8.5s both;
+          animation: show 2s linear 8.5s both;
+}
+
+.bulb18 {
+  left: 35vw;
+  top: 46vh;
+  -webkit-animation: show 2s linear 9s both;
+          animation: show 2s linear 9s both;
 }
 
 .bulb:checked + .fas {
@@ -129,7 +213,7 @@
   font-size: 32px;
   font-weight: bold;
   position: absolute;
-  left: 50%;
+  left: 45%;
   bottom: 32px;
 }
 /*# sourceMappingURL=style.css.map */
