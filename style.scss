@@ -1,0 +1,73 @@
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.bulb {
+    position: absolute;
+    left: -9999999px;
+    visibility: hidden;
+}
+
+.earth {
+    height: 100vh;
+    background-image: url(https://store.donanimhaber.com/13/85/fa/1385fa6146b5feaa6dafcce390fdfc80.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    counter-reset: score;
+}
+
+.fas {
+    color: orange;
+    font-size: 32px;
+    position: absolute;
+}
+
+@for $i from 1 through 6 {
+    .bulb#{$i} {
+        left: random(90)+vw;
+        top: random(90) + vh;
+        animation: show 2s linear $i*1s both;
+    }
+}
+
+.bulb:checked+.fas {
+    animation: fade-out 2s linear both;
+    color: black;
+}
+
+.bulb:checked {
+    counter-increment: score;
+}
+
+.count:after {
+    content: counter(score);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    bottom: 32px;
+}

@@ -1,0 +1,135 @@
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.bulb {
+  position: absolute;
+  left: -9999999px;
+  visibility: hidden;
+}
+
+.earth {
+  height: 100vh;
+  background-image: url(https://store.donanimhaber.com/13/85/fa/1385fa6146b5feaa6dafcce390fdfc80.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  counter-reset: score;
+}
+
+.fas {
+  color: orange;
+  font-size: 32px;
+  position: absolute;
+}
+
+.bulb1 {
+  left: 24vw;
+  top: 45vh;
+  -webkit-animation: show 2s linear 1s both;
+          animation: show 2s linear 1s both;
+}
+
+.bulb2 {
+  left: 3vw;
+  top: 26vh;
+  -webkit-animation: show 2s linear 2s both;
+          animation: show 2s linear 2s both;
+}
+
+.bulb3 {
+  left: 73vw;
+  top: 75vh;
+  -webkit-animation: show 2s linear 3s both;
+          animation: show 2s linear 3s both;
+}
+
+.bulb4 {
+  left: 16vw;
+  top: 34vh;
+  -webkit-animation: show 2s linear 4s both;
+          animation: show 2s linear 4s both;
+}
+
+.bulb5 {
+  left: 59vw;
+  top: 11vh;
+  -webkit-animation: show 2s linear 5s both;
+          animation: show 2s linear 5s both;
+}
+
+.bulb6 {
+  left: 32vw;
+  top: 69vh;
+  -webkit-animation: show 2s linear 6s both;
+          animation: show 2s linear 6s both;
+}
+
+.bulb:checked + .fas {
+  -webkit-animation: fade-out 2s linear both;
+          animation: fade-out 2s linear both;
+  color: black;
+}
+
+.bulb:checked {
+  counter-increment: score;
+}
+
+.count:after {
+  content: counter(score);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+}
+/*# sourceMappingURL=style.css.map */
